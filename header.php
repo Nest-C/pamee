@@ -54,29 +54,25 @@
 
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Navbar brand -->
-                <a class="navbar-brand mt-2 mt-lg-0" href="#">
-                    <img src="./img/logo.svg" height="15"
-                        alt="MDB Logo" loading="lazy" />
-                </a>
+         
                 <!-- Left links -->
                 <?php if (!isset($_SESSION['username'])) : ?>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">หน้าแรก</a>
+                            <a class="nav-link" href="index.php">หน้าแรก</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">สินค้า</a>
+                            <a class="nav-link" href="product.php">สินค้า</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">เกี่ยวกับเขาแล้วเราละ</a>
+                            <a class="nav-link" href="about_me.php">เกี่ยวกับเรา</a>
                         </li>
                     </ul>
                 <?php endif ?>
                 <?php if (isset($_SESSION['username'])) : ?>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">หน้าแรก</a>
+                            <a class="nav-link" href="index.php">หน้าแรก</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="admin_product.php">สินค้า</a>
@@ -88,13 +84,19 @@
                             <a class="nav-link" href="admin_member.php">พนักงาน</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">รายงาน</a>
+                            <a class="nav-link" href="order.php">ออเดอร์</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="report.php">รายงาน</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> </a>
                         </li>
                     </ul>
                 <?php endif ?>
                 <!-- Left links -->
             </div>
-
+            </div>
             <!-- Right elements -->
             <div class="d-flex align-items-center">
                 <?php if (isset($_SESSION['username'])) : ?>

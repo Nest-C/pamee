@@ -20,7 +20,7 @@
 </head>
 <body>
     
-    <div class="header">
+    <div class="header" >
         <h2>Login</h2>
     </div>
 
@@ -46,7 +46,6 @@
         <div class="input-group">
             <button type="submit" name="login_user" class="btn btn-outline-success btn-rounded">Login</button>
         </div>
-        <p>เพิ่มพนักงาน <a href="register.php">เพิ่ม</a></p>
     </form>
 
  <!-- MDB -->

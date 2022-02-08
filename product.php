@@ -21,7 +21,7 @@
 			if (isset($_GET['q']) || isset($_GET['min']) || isset($_GET['max']) || isset($_GET['ctid'])) {
 				$sql .= " WHERE ";
 				if (isset($_GET['ctid'])) {
-					$sql .= "ct_id = " . $_GET['ctid'];	
+					$sql .= "ct_id = " . $_GET['ctid'];
 				}
 				if (isset($_GET['q'])) {
 					$sql .= "LOWER(pd_name) LIKE '%" . $_GET['q'] . "%' ";

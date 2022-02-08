@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>eCART | Online Shopping</title>
+<title>Pamee Shop</title>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
 </head>
 

@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>eCART | Online Shopping</title>
+<title>Pamee Shop</title>
 <link href="style1.css" rel="stylesheet" type="text/css" />
 <link href="css1.css" rel="stylesheet" type="text/css" />
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
@@ -15,15 +15,16 @@
 <body bgcolor="#f8f8f8">
 	<?php include "header.php" ?>
     <div style="min-height: 100vh">
-        <div class="container" style="margin: 20px auto; background: white;">
+        <div class="container">
 				
-                <div align="center" class="divider">
+                <div>
                 	<div class="right btn red" onclick="go('admin_product.php?modal=product')">เพิ่ม</div>
                 	<h2>สินค้า</h2>
                     <div class="clear"></div>
                 </div>
-                <div align="center">
-                	<table width="70%" border="1" cellspacing="0" cellpadding="5">
+                <div>
+                	<table class="table table-sm">
+                  <thead class="table-light">
                           <tr>
                             <th scope="col">รหัส</th>
                             <th scope="col">ชื่อ</th>
@@ -34,12 +35,14 @@
                             <th scope="col">แก้ไข</th>
                             <th scope="col">ลบ</th>
                           </tr>
+                          </thead>
+                          <tbody>
                           <?php
 						  	$sql = "SELECT * FROM product INNER JOIN category ON product.ct_id = category.ct_id INNER JOIN images ON images.pd_id = product.pd_id GROUP BY images.pd_id";
 							$ex = mysqli_query($conn, $sql);
 							while ($rs = mysqli_fetch_array($ex)) {
 						  ?>
-                              <tr align="center">
+                              <tr>
                                 <td><?=sprintf("%05d", $rs['pd_id'])?></td>
                                 <td align="left"><?=$rs['pd_name']?></td>
                                 <td align="left"><?=$rs['ct_name']?></td>
@@ -52,6 +55,7 @@
                           <?php
 							}
 							?>
+                          </tbody>
                         </table>
                 </div>
         </div>

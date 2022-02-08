@@ -1,6 +1,6 @@
 <?php
-	  session_start();
-	  include('server.php'); 
+	session_start();
+	include('server.php'); 
 	$ctid = $_GET['ctid'];
 	
 	$sql = "DELETE FROM category WHERE ct_id = $ctid";

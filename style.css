@@ -81,5 +81,5 @@ form {
 #LOGO {
     height: 200px;
     background-color: #cccccc;
-    background-image: linear-gradient(red, blue);
+    background-image: linear-gradient(#f3e3e3, blue);
 }

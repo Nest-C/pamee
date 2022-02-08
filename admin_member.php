@@ -8,6 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Pamee Shop</title>
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<?php include "resource.php" ?>
 </head>
 
 <body bgcolor="#f8f8f8">

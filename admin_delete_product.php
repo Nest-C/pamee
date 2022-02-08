@@ -1,7 +1,7 @@
 <?php
 
-	include "roles.php";
-	
+	session_start();
+	include('server.php'); 
 	$pdid = $_GET['pdid'];
 	
 	$sql = "DELETE FROM product WHERE pd_id = $pdid";

@@ -10,6 +10,7 @@
 <link href="style1.css" rel="stylesheet" type="text/css" />
 <link href="css1.css" rel="stylesheet" type="text/css" />
 <script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<?php include "resource.php" ?>
 </head>
 
 <body bgcolor="#f8f8f8">

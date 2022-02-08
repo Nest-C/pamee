@@ -1,15 +1,14 @@
 <?php
 
-session_start();
-include('server.php'); 
+	session_start();
+	include('server.php'); 	
 	$name = $_POST['name'];
 	$ctid = $_POST['ctid'];
 	$detail = nl2br($_POST['detail']);
 	$price = $_POST['price'];
-	$sale = $_POST['sale'] ? $_POST['sale'] : 0;
 	$onhand = $_POST['onhand'];
 	
-	$sql = "INSERT INTO product (pd_name, ct_id, pd_detail, pd_price, pd_sale, pd_onhand) VALUES ('$name', $ctid, '$detail', $price, $sale, $onhand)";
+	$sql = "INSERT INTO product (pd_name, ct_id, pd_detail, pd_price,  pd_onhand) VALUES ('$name', $ctid, '$detail', $price,  $onhand)";
 	mysqli_query($conn, $sql);
 	
 	$q = "SELECT max(pd_id) FROM product";

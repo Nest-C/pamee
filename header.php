@@ -1,14 +1,4 @@
 <?php 
-    $modal = ["login", "register", "category", "product", "forget_password"];
-    if (isset($_GET['modal']) && in_array($_GET['modal'], $modal)) {
-    ?>
-        <div class="dimm">
-            <div class="modal">
-                <?php include "modal_" . $_GET['modal'] . ".php"; ?>
-            </div>
-        </div>
-    <?php
-    }
     // if (!isset($_SESSION['username'])) {
     //     $_SESSION['msg'] = "You must log in first";
     //     header('location: login.php');
@@ -21,26 +11,22 @@
         header('location: index.php');
     }
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <div id="LOGO"></div>
+?> 
+    <div class="bg-dark p-2 text-dark bg-opacity-10" >
+            <div
+            class="bg-image"
+            style="
+                background-image: url('./img/pamee.png');
+                Width: 25%;
+                height:250px;
+                top: 20%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -5%);
+                "
+        >
+        </div>
+    </div>  
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- Container wrapper -->
@@ -129,7 +115,3 @@
     
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"></script>
-
-</body>
-
-</html>

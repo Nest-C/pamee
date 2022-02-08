@@ -1,6 +1,6 @@
 <?php
-	  session_start();
-	  include('server.php'); 
+	session_start();
+	include('server.php'); 
 	$name = $_POST['name'];
 	$ctid = $_POST['ctid'];
 	$detail = nl2br($_POST['detail']);
